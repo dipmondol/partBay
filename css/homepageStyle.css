@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@500&family=Playfair+Display:ital,wght@0,800;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap");
+
+:root {
+  --dark: #292929;
+  --lightDark: #616161;
+  --white: #ffffff;
+  --orange: #fe8529;
+  --yellow: #eeb34b;
+  --red: #e3394b;
+  --lightRed: #fe4c6f;
+  --darkBlue: #1d3557;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 3rem 9%;
+}
+.header .logo {
+  font-size: 2.5rem;
+  color: var(--dark);
+  font-weight: bolder;
+}
+.header .logo span {
+  color: var(--red);
+}
+.search-container {
+  border: var(--border);
+  border-radius: 50px;
+  font-size: 1rem;
+  padding: 0.8em;
+}
+.search-container button {
+  background: none;
+  color: var(--red);
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--dark);
+}
+.header .navbar a:hover {
+  color: var(--red);
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  background: var(--red);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.7rem;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+}
+.btn:hover {
+  background: #fe4c6f;
+}
+
+.header .login-btn ion-icon {
+  font-size: 2.5rem;
+  color: var(--dark);
+  cursor: pointer;
+  display: none;
+}
+#menu-btn {
+  font-size: 2.5rem;
+  color: var(--dark);
+  cursor: pointer;
+  display: none;
+}
+body {
+  height: 300rem;
+}
+.header.active {
+  box-shadow: var(--box-shadow);
+  padding: 2rem 9%;
+}
+
+/* Login Form */
+.login-form-container {
+  position: fixed;
+  top: -105%;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.login-form-container form ion-icon {
+  font-size: 10rem;
+  color: var(--lightDark);
+}
+
+.login-form-container.active {
+  top: 0;
+  opacity: 1;
+}
+.login-form-container form {
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  background: #fff;
+  border: var(--border);
+  text-align: center;
+  width: 40rem;
+}
+.login-form-container form .buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.login-form-container form .btn {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+.login-form-container form h3 {
+  color: var(--lightDark);
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+.login-form-container form .box {
+  margin: 0.7rem 0;
+  width: 100%;
+  color: var(--dark);
+  font-size: 1.6rem;
+  padding: 1rem 1.2rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+}
+.login-form-container form p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: var(--lightDark);
+}
+.login-form-container form p a {
+  color: var(--red);
+  text-decoration: underline;
+}
+.login-form-container #login-form-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 3rem;
+  color: var(--dark);
+  cursor: pointer;
+}
+/* Login Form End */
+/* Home Banners */
+.home {
+  padding-top: 10rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+.home h1 {
+  font-size: 4.5vw;
+  color: var(--dark);
+}
+.home img {
+  width: 100%;
+  height: 800px;
+  margin: 1rem 0;
+}
+
+/* Home Banners End*/
+
+.icons-container {
+  padding: 6rem 15rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  background: #eee;
+}
+.icons-container .icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 4rem;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+}
+.icons-container .icons i {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  background: var(--red);
+  color: #eee;
+  text-align: center;
+}
+.icons-container .icons .content h3 {
+  color: var(--red);
+  font-size: 2rem;
+}
+.icons-container .icons .content p {
+  color: var(--lightDark);
+  font-size: 1.5rem;
+}
+.icons-container .icons:hover {
+  background: var(--red);
+}
+.icons-container .icons:hover i {
+  background: var(--dark);
+}
+.icons-container .icons:hover .content h3 {
+  color: var(--white);
+}
+.icons-container .icons:hover .content p{
+  color: var(--white);
+}
+/* media quries */
+@media (max-width:991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 2rem;
+  }
+}
+@media (max-width: 810px) {
+  #menu-btn {
+    display: block;
+  }
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+  .header .login-btn ion-icon {
+    display: block;
+  }
+  .header .login-btn .btn {
+    display: none;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .header .navbar a {
+    display: block;
+    margin: 2rem;
+    font-size: 2rem;
+    border-bottom: var(--border);
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

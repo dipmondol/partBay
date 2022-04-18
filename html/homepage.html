@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- Fontawesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="/css/homepageStyle.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header class="header">
+
+        <div id="menu-btn" class="fa fa-bars"></div>
+        <a href="#" class="logo"><span>part</span>bay</a>
+
+        <div class="search-container">
+            <form action="#">
+                <input type="text" placeholder="Search here...." name="search">
+                <button type="submit"> <i class="fa fa-search"></i> </button>
+            </form>
+        </div>
+        <!-- menu -->
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#interior">Interior</a>
+            <a href="#exterior">Exterior</a>
+            <a href="#lighting">Lighting</a>
+            <a href="#aboutus">About Us</a>
+
+        </nav>
+        <div class="login-btn">
+            <button class="btn">Login</button>
+            <ion-icon name="person-outline"></ion-icon>
+
+        </div>
+        <!-- menu -->
+    </header>
+    <!-- Header Section end -->
+
+    <!-- Login Form -->
+    <div class="login-form-container">
+        <span class="fa fa-times" id="login-form-close">
+
+        </span>
+        <form action="#">
+            <ion-icon name="person-outline"></ion-icon>
+            <h3>User Login</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="Password" class="box">
+            <p>Forget your password <a href="#">Click Here</a></p>
+            <input type="submit" value="login now" class="btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn">Facebook</i></a>
+
+                <a href="#" class="btn">Google</a>
+            </div>
+            <p>Don't have an account <a href="#">Create One</a> </p>
+        </form>
+    </div>
+    <!-- Login Form End -->
+
+    <!-- Home Banner -->
+    <section class="home" id="home">
+        <!-- <h1 class="home-parallax" data-speed="-2">Find your car</h1> -->
+        <img src="/images/banners/car.jpg" alt="" class="home-parallax" data-speed="5">
+        <a href="#" class="btn home-parallax" data-speed="7">Explore</a>
+    </section>
+    <!-- Home Banner -->
+    <!-- icons section -->
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fa fa-home"></i>
+            <div class="content">
+                <h3>150+</h3>
+                <p>Branches</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fa fa-wrench"></i>
+            <div class="content">
+                <h3>8770+</h3>
+                <p>Parts Sold</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fa fa-users"></i>
+            <div class="content">
+                <h3>360+</h3>
+                <p>Happy Customers</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fa fa-car"></i>
+            <div class="content">
+                <h3>1K+</h3>
+                <p>New Car Parts</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- icons section -->
+    <!-- custom js link -->
+    <script src="/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+</body>
+
+</html>
