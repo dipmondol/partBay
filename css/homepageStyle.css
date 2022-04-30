@@ -369,6 +369,46 @@ text-align: center;
 
 /* Why Us */
 
+/* popular parts */
+.popularParts .popularParts-slider{
+  padding: 1rem;
+  padding-bottom: 4rem;
+}
+.popularParts .popularParts-slider .box{
+  text-align: center;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  border-radius: .5rem;
+}
+.popularParts .popularParts-slider .box img{
+  /* height: 13rem; */
+  width: 100%;
+  padding: 2rem;
+
+}
+
+.popularParts .popularParts-slider .box:hover img{
+  transform: scale(.9);
+}
+.popularParts .popularParts-slider .box h3{
+  font-size: 2.2rem;
+  color: var(--dark);
+}
+.popularParts .popularParts-slider .box .stars{
+ padding: 1rem 0;
+}
+.popularParts .popularParts-slider .box .stars i{
+  font-size: 1.7rem;
+  color: var(--red);
+}
+.popularParts .popularParts-slider .box .price{
+  font-size: 2.5rem;
+  color: var(--dark);
+}
+/* popular parts */
+
+
 /* Popular Parts End */
 /* media quries */
 @media (max-width:991px) {
