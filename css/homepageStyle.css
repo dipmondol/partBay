@@ -77,6 +77,41 @@ section{
 .header .logo span {
   color: var(--red);
 }
+
+/* Search */
+.header form{
+ 
+  min-width: 40%;
+  height: 4rem;
+  display: flex;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  border-radius: 5rem;
+}
+.header form input[type="search"]{
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--dark);
+  text-transform: none;
+  padding: 0 2rem;
+  text-align: left;
+}
+.header form input[type="submit"]{
+  height: 100%;
+  width: 10rem;
+  font-size: 1.7rem;
+  color: var(--white);
+  background: var(--red);
+  cursor: pointer;
+  
+}
+.header form input[type="submit"]:hover{
+  background: var(--lightRed);
+
+}
+/* Search */
+
 .search-container {
   border: var(--border);
   border-radius: 50px;
@@ -279,7 +314,8 @@ body {
   width: 10rem;
 }
 .vehicles .vehicles-slider .box img{
-  width: 100%;
+  width: 70%;
+  height: 70%;
   opacity: .5;
   transform: scale(.8);
 
@@ -382,8 +418,8 @@ text-align: center;
   border-radius: .5rem;
 }
 .popularParts .popularParts-slider .box img{
-  /* height: 13rem; */
-  width: 100%;
+  height: 40%;
+  width: 40%;
   padding: 2rem;
 
 }
@@ -406,10 +442,64 @@ text-align: center;
   font-size: 2.5rem;
   color: var(--dark);
 }
-/* popular parts */
-
 
 /* Popular Parts End */
+
+/* newsletter start */
+.newsLetter{
+  padding: 6rem 2rem;
+  text-align: center;
+  background: url(/images/banners/filter.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+
+}
+.newsLetter h2{
+  color: var(--white);
+  font-size: 3rem;
+ 
+
+}
+.newsLetter p{
+
+  color: var(--lightDark);
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.newsLetter form{
+  margin: 1rem auto;
+  max-width: 60rem;
+  height: 5rem;
+  display: flex;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  border-radius: 5rem;
+}
+.newsLetter form input[type="email"]{
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--dark);
+  text-transform: none;
+  padding: 0 2rem;
+}
+.newsLetter form input[type="submit"]{
+  height: 100%;
+  width: 17rem;
+  font-size: 1.7rem;
+  color: var(--white);
+  background: var(--red);
+  cursor: pointer;
+  
+}
+.newsLetter form input[type="submit"]:hover{
+  background: var(--lightRed);
+
+}
+/* newsletter end */
+
 /* media quries */
 @media (max-width:991px) {
   html {
