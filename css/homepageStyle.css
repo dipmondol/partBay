@@ -529,6 +529,53 @@ body {
 
 /* contact us end */
 
+/* footer start */
+.footer{
+  background: var(--red);
+}
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box h3{
+  color: var(--white);
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  
+}
+.footer .box-container .box a{
+  color: black;
+  font-size: 1.4rem;
+  display: block;
+}
+
+.footer .box-container .box a ion-icon{
+  padding-right: .5rem;
+  color: black;
+  
+}
+.footer .box-container .box a:hover ion-icon{
+  padding-right: 2rem;
+
+ 
+}
+.footer .box-container .box .social a{
+  display: inline-block;
+  font-size: 2.5rem;
+  padding-right: .5rem;
+  margin-top: 1rem;
+  
+}
+
+.copyright p{
+  color: black;
+  text-align: center;
+  font-size: 1.4rem;
+  border-top:  var(--border);
+}
+/* footer end */
+
 /* media quries */
 @media (max-width: 991px) {
   html {
