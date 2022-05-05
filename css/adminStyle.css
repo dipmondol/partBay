@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@500&family=Playfair+Display:ital,wght@0,800;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap");
+
+:root {
+  --dark: #292929;
+  --lightDark: #616161;
+  --white: #ffffff;
+  --orange: #fe8529;
+  --yellow: #eeb34b;
+  --red: #e3394b;
+  --lightRed: #fe4c6f;
+  --darkBlue: #1d3557;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-primary: #7380ec;
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+    --box-shadow-admin: 0 2rem 3rem var(--color-light);
+
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+  user-select: none;
+  background:var(--color-info-light);
+  
+}
+img{
+    display: block;
+    width: 100%;
+}
+p{
+    color: var(--color-dark-variant);
+}
+b{
+    color: var(--color-dark);
+
+}
+.primary{
+    color: var(--color-primary);
+}
+.danger{
+    color: var(--color-danger);
+}
+.success{
+    color: var(--color-success);
+}
+.warning{
+    color: var(--color-warning);
+}
+
+aside{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.top .logo{
+    display: flex;
+    gap: 1rem;
+    background: white;
+   
+}
+.top .logo .close{
+    display: none;
+}
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+    
+    
+}
+.top a{
+    color: var(--dark);
+}
+  
+
+.top .logo {
+    font-size: 2.5rem;
+    color: var(--dark);
+    font-weight: bolder;
+  }
+  .top .logo span {
+    color: var(--red);
+  }
+  
+
+  /* =======SideBar============ */
+
+  aside .sideBarMenu{
+      background: white;
+      display: flex;
+      flex-direction: column;
+      height: 86vh;
+      position: relative;
+      top: 3rem;
+  }
+aside h3{
+    font-weight: 500;
+}
+aside .sideBarMenu a{
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+aside .sideBarMenu a span{
+    font-size: 1.6rem;
+}
+aside .sideBarMenu a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;  border: 2px solid red;
+}
+
+aside .sideBarMenu a.active{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;  border: 2px solid red;
+}
+aside .sideBarMenu a.active:before{
+    content: '';
+    width: 6px;
+    height: 100%;
+    border: 2px solid red;
+    background: var(--color-primary);
+} 
+  /* =======SideBar============ */
