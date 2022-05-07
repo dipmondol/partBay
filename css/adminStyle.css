@@ -28,8 +28,7 @@
 
   --card-padding: 1.8rem;
   --padding-1: 1.2rem;
-    --box-shadow-admin: 0 2rem 3rem var(--color-light);
-
+  --box-shadow-admin: 0 2rem 3rem var(--color-light);
 }
 
 * {
@@ -49,115 +48,162 @@ html {
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
   user-select: none;
-  background:var(--color-info-light);
-  
+  background: var(--color-info-light);
 }
-img{
-    display: block;
-    width: 100%;
+img {
+  display: block;
+  width: 100%;
 }
-p{
-    color: var(--color-dark-variant);
+p {
+  color: var(--color-dark-variant);
 }
-b{
-    color: var(--color-dark);
-
+b {
+  color: var(--color-dark);
 }
-.primary{
-    color: var(--color-primary);
+.primary {
+  color: var(--color-primary);
 }
-.danger{
-    color: var(--color-danger);
+.danger {
+  color: var(--color-danger);
 }
-.success{
-    color: var(--color-success);
+.success {
+  color: var(--color-success);
 }
-.warning{
-    color: var(--color-warning);
+.warning {
+  color: var(--color-warning);
 }
 
-aside{
-   
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.top .logo{
-    display: flex;
-    gap: 1rem;
-    background: white;
-   
+.top .logo {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
 }
-.top .logo .close{
-    display: none;
-}
-.container{
-    display: grid;
-    width: 96%;
-    margin: 0 auto;
-    gap: 1.8rem;
-    grid-template-columns: 14rem auto 23rem;
-    
-    
-}
-.top a{
-    color: var(--dark);
-}
+.top .logo a{
+    font-size: 4.1rem;
   
+}
+.top .logo .close {
+  display: none;
+}
+.container {
+  display: grid;
+  width: 96%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  grid-template-columns: 14rem auto 23rem;
+}
+.top a {
+  color: var(--dark);
+}
 
 .top .logo {
-    font-size: 2.5rem;
-    color: var(--dark);
-    font-weight: bolder;
-  }
-  .top .logo span {
-    color: var(--red);
-  }
-  
-
-  /* =======SideBar============ */
-
-  aside .sideBarMenu{
-      background: white;
-      display: flex;
-      flex-direction: column;
-      height: 86vh;
-      position: relative;
-      top: 3rem;
-  }
-aside h3{
-    font-weight: 500;
+  font-size: 2.5rem;
+  color: var(--dark);
+  font-weight: bolder;
 }
-aside .sideBarMenu a{
-    display: flex;
-    color: var(--color-info-dark);
-    margin-left: 2rem;
-    gap: 1rem;
-    align-items: center;
-    position: relative;
-    height: 3.7rem;
-    transition: all 300ms ease;
-}
-aside .sideBarMenu a span{
-    font-size: 1.6rem;
-}
-aside .sideBarMenu a:last-child{
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;  border: 2px solid red;
+.top .logo span {
+  color: var(--red);
 }
 
-aside .sideBarMenu a.active{
-    background: var(--color-light);
-    color: var(--color-primary);
-    margin-left: 0;  border: 2px solid red;
+/* =======SideBar============ */
+
+aside .sideBarMenu {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  height: 86vh;
+  position: relative;
+  top: 3rem;
+  box-shadow: var(--box-shadow-admin);
 }
-aside .sideBarMenu a.active:before{
-    content: '';
-    width: 6px;
-    height: 100%;
-    border: 2px solid red;
-    background: var(--color-primary);
-} 
-  /* =======SideBar============ */
+aside h3 {
+  font-weight: 500;
+}
+aside .sideBarMenu a {
+  display: flex;
+  color: var(--color-info-dark);
+  margin-left: 2rem;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  height: 3.9rem;
+  padding-right: 1.5rem;
+  transition: all 300ms ease;
+  font-size: 1.2rem;
+}
+aside .sideBarMenu a span {
+  font-size: 1.6rem;
+  transition: all 300ms ease;
+}
+aside .sideBarMenu a:last-child {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+}
+
+aside .sideBarMenu a.active {
+  background: var(--color-light);
+  color: var(--color-primary);
+  margin-left: 0;
+}
+aside .sideBarMenu a.active:before {
+  content: "";
+  width: 6px;
+  height: 100%;
+
+  background: var(--color-primary);
+}
+aside .sideBarMenu a.active span {
+  color: var(--color-primary);
+  margin-left: calc(1rem - 3px);
+}
+aside .sideBarMenu a:hover {
+  color: var(--color-primary);
+}
+aside .sideBarMenu a:hover span {
+  margin-left: 1rem;
+}
+aside .sideBarMenu .message-count {
+  background: var(--color-danger);
+  color: var(--white);
+  padding: 2px 10px;
+  font-size: 11px;
+  border-radius: var(--border-radius-1);
+}
+/* =======SideBar============ */
+
+/* =================Main================ */
+main {
+  margin-top: 1.4rem;
+  margin-left: 5rem;
+}
+
+main .date {
+  display: inline-block;
+  background: var(--color-light);
+  border-radius: var(--border-radius-1);
+  margin-top: 1rem;
+  padding: 0.5rem 1.6rem;
+}
+main .date input[type="date"] {
+  background: transparent;
+  color: var(--color-dark);
+}
+main .insights {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+main .insights > div {
+  background: var(--white);
+  padding: var(--card-padding);
+  border-radius: var(--border-radius-2);
+  box-shadow: var(--box-shadow-admin);
+}
+/* =================Main================ */
