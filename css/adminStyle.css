@@ -483,4 +483,72 @@ box-shadow: none;
   font-weight: 300;
 
 }
+
+
 /* ==============End Sales Analytics================ */
+
+
+/* ===============media quries================ */
+@media screen and (max-width: 1200px){
+
+.container{
+  width: 94%;
+  grid-template-columns: 7rem auto 23rem;
+}
+aside .top .logo a{
+font-size: 2rem;
+
+}
+aside .sideBarMenu h3{
+  display: none;
+}
+aside .sideBarMenu a{
+  width: 5.6rem;
+}
+aside .sidebar a:last-child{
+  position: relative;
+  margin-top: 1.8rem;
+}
+aside .sideBarMenu a.active{
+  width: 100%;
+}
+aside .sideBarMenu .message-count{
+  padding: 1px 5px;
+  font-size: 1rem;
+}
+main .insights{
+  grid-template-columns: 1fr;
+  gap: 0;
+ 
+}
+main .insights > div{
+  margin-bottom: 1rem;
+}
+main .recent-order{
+  width: 94%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 2rem 0 0 8.8rem;
+}
+main .recent-order h2{
+  margin-left: 5rem;
+}
+main .recent-order table{
+  width: 81vw;
+  margin-left: 5rem;
+
+}
+
+
+}
+
+/* ===============media quries================ */
+
+/* =========media quries for small devices============ */
+
+@media screen and (max-width: 768px){
+ 
+}
+
+/* =========media quries for small devices============ */
