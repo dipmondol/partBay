@@ -86,7 +86,7 @@ aside {
 .top .logo a {
   font-size: 4.1rem;
 }
-.top .logo .close {
+.sideBarMenu .close {
   display: none;
 }
 .container {
@@ -498,6 +498,7 @@ main .recent-order a {
     position: relative;
     margin-top: 1.8rem;
   }
+ 
   aside .sideBarMenu a.active {
     width: 100%;
   }
@@ -518,13 +519,26 @@ main .recent-order a {
     left: 50%;
     transform: translateX(-50%);
     margin: 2rem 0 0 8.8rem;
+    padding-left: 5rem;
+    padding-right: 8.5rem;
   }
+  /* main .recent-order{
+    position: relative;
+    margin: 3rem 0 0 0;
+    width: 100%;
+    
+  } */
   main .recent-order h2 {
     margin-left: 5rem;
   }
-  main .recent-order table {
+  /* main .recent-order table {
     width: 81vw;
     margin-left: 5rem;
+  } */
+  main .recent-order table{
+    width: 100%;
+    margin: 0;
+    
   }
 }
 
@@ -539,44 +553,60 @@ main .recent-order a {
     grid-template-columns: 1fr;
   }
   aside .sideBarMenu {
+    position: fixed;
    
-    left: 0;
     background: var(--white);
     width: 18rem;
     z-index: 3;
     box-shadow: 1rem 3rem 4rem var(--color-light);
     height: 100vh;
     display: none;
+    animation: showMenu 400ms ease forwards;
+   
     
+  }
+  @keyframes showMenu{
+    to{
+      left: 0;
+    }
   }
   aside .logo {
     margin-left: 0.5rem;
-    background: var(--white);
+   
+  
    
   }
+  .sideBarMenu .close{
+    display: block;
+  }
   aside .top{
-    background: var(--white);
+   
   }
   aside .top .logo a {
+   
+    margin: 0;
+    top: 0;
+    left: 0;
     font-size: 3rem;
+    margin-top: 5rem;
   }
-  aside .logo h2 {
-    display: inline;
+  aside .top .logo {
+    display: none;
   }
 
   aside .sideBarMenu h3 {
     display: inline;
   }
-
+ 
   aside .sideBarMenu a {
-    width: 100%;
-    height: 3.4rem;
+   
   } 
   aside .sideBarMenu a.active{
     width: 100%;
   }
-  aside .top .logo .close{
-    display: inline-block;
+  aside .sideBarMenu .close{
+    color: var(--red);
+    margin-left: 15rem;
     cursor: pointer;
   }
 
@@ -585,22 +615,31 @@ main .recent-order a {
     margin: 1rem;
     padding: 0 1rem;
   }
-
+main .dashboard{
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
   main .recent-order{
     position: relative;
     margin: 3rem 0 0 0;
     width: 100%;
+    padding: 0;
+    
+  }
+  main .recent-order h2{
+    margin-left: 0;
   }
   main .recent-order table{
     width: 100%;
     margin: 0;
+    
     
   }
   .right{
     width: 94%;
     margin: 0 auto 4rem;
   }
-  .right .top{
+   .right .top{
     position: fixed;
     top: 0;
     left: 0;
@@ -613,7 +652,7 @@ main .recent-order a {
     z-index: 2;
     box-shadow: 0 1rem 1rem var(--color-light);
     
-  }
+  } 
   .right .top .theme-toggler{
     width: 5rem;
     position: absolute;
@@ -634,6 +673,9 @@ main .recent-order a {
   }
   .right .top button span{
     font-size: 2rem;
+  }
+  aside .sideBarMenu a:last-child{
+    margin-bottom: 5rem;
   }
 }
 
