@@ -23,14 +23,12 @@
         <!-- start of side bar menu -->
         <aside>
             <div class="top">
-                <div class="logo">
-                    <a href="#" class=""><span>part</span>bay</a>
 
-
-                </div>
 
 
                 <div class="sideBarMenu">
+
+
                     <div class="close" id="close-btn">
                         <span class="material-icons-sharp">
                             close
@@ -205,6 +203,10 @@
 
             </div>
             <!-- end of insights -->
+
+
+
+
             <!-- Recent orders -->
             <div class="recent-order">
                 <h2>Recent Orders</h2>
@@ -311,40 +313,68 @@
                     </tbody>
                 </table>
                 <a href="#">Show All</a>
+
+
+
+
+
             </div>
             <!-- End Recent orders -->
+
+            <!-- Graphs -->
+            <div class="graphBox">
+
+                <div class="box">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="box">
+                    <canvas id="myChartPolar"></canvas>
+                </div>
+            </div>
+            <!-- End Graphs -->
 
 
         </main>
 
         <!-- End main section -->
 
+
         <!-- recent updates -->
         <div class="right">
             <!-- Top -->
+
             <div class="top">
-                <button id="menu-btn" class="active">
-                    <span class="material-icons-sharp">
-                        menu
-                    </span>
-                </button>
-                <div class="theme-toggler">
-                    <span class="material-icons-sharp active">
-                        light_mode
-                    </span>
-                    <span class="material-icons-sharp">
-                        dark_mode
-                    </span>
-                </div>
-                <div class="profile">
-                    <div class="info">
-                        <p><b>Kevin</b></p>
-                        <small class="text-muted">Admin</small>
-                    </div>
-                    <div class="profile-pic">
-                        <img src="/images/host.png" alt="">
+                <div class="left">
+                    <button id="menu-btn" class="active">
+                        <span class="material-icons-sharp">
+                            menu
+                        </span>
+                    </button>
+                    <div class="logo">
+                        <a href="#">Part<span>bay</span></a>
                     </div>
                 </div>
+               
+                <div class="rightToggler">
+                    <div class="theme-toggler">
+                        <span class="material-icons-sharp active">
+                            light_mode
+                        </span>
+                        <span class="material-icons-sharp">
+                            dark_mode
+                        </span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p><b>Kevin</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+                        <div class="profile-pic">
+                            <img src="/images/host.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <!-- End Top -->
             <div class="recent-updates">
@@ -462,7 +492,10 @@
 
 
 
+
     <script src="/js/adminPanel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="/js/chart.js"></script>
 </body>
 
 </html>

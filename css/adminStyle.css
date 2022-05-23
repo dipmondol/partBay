@@ -95,14 +95,8 @@ aside {
   align-items: center;
   justify-content: space-between;
 }
-.top .logo {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1rem;
-}
-.top .logo a {
-  font-size: 4.1rem;
-}
+
+
 .sideBarMenu .close {
   display: none;
 }
@@ -113,14 +107,16 @@ aside {
   gap: 1.8rem;
   grid-template-columns: 14rem auto 23rem;
 }
-.top a {
-  color: var(--dark);
-}
 
-.top .logo {
+
+.top .logo a{
+  
   font-size: 2.5rem;
   color: var(--dark);
   font-weight: bolder;
+
+
+  
 }
 .top .logo span {
   color: var(--red);
@@ -132,9 +128,9 @@ aside .sideBarMenu {
   background: var(--white);
   display: flex;
   flex-direction: column;
-  height: 86vh;
-  position: relative;
-  top: 3rem;
+  height: 80vh;
+  position: absolute;
+  top: 6rem;
   box-shadow: var(--box-shadow-admin);
 }
 aside h3 {
@@ -195,7 +191,7 @@ aside .sideBarMenu .message-count {
 
 /* =================Main================ */
 main {
-  margin-top: 1.4rem;
+  margin-top: 5.5rem;
   margin-left: 5rem;
   color: var(--dark);
 }
@@ -303,6 +299,32 @@ main .insights small {
 }
 /* =================Main================ */
 
+
+
+/* ===========Graphs=========== */
+  .graphBox{
+   
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    min-height: 200px;
+    
+
+  }
+.graphBox .box{
+  padding: 2rem;
+  background: var(--white);
+  width: 100%;
+  box-shadow: var(--box-shadow-admin);
+  border-radius: var(--border-radius-1);
+
+}
+/* ===========End of Graphs=========== */
+
+
+
+
 /* ================Recent Orders=============== */
 
 main .recent-order {
@@ -362,12 +384,25 @@ main .recent-order a {
 
 /* ============Recent Updates */
 .right {
-  margin-top: 1.4rem;
+
+  margin-top: 5.5rem;
 }
-.right .top {
+.right .top{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  
+}
+.right .top .rightToggler{
   display: flex;
   justify-content: end;
   gap: 2rem;
+  
+}
+
+.right .top .logo a{
+  padding-left: 3rem;
+  
 }
 .right .top button {
   display: none;
@@ -383,6 +418,7 @@ main .recent-order a {
   cursor: pointer;
   border-radius: var(--border-radius-1);
   color: var(--dark);
+  margin-top: .5rem;
 }
 .right .theme-toggler span {
   font-size: 1.7rem;
@@ -510,6 +546,21 @@ main .recent-order a {
 .right .sales-analytics .add-product div h3 {
   font-weight: 300;
 }
+.right .top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  padding: 0 0.8rem;
+  background: var(--white);
+  width: 100%;
+  height: 4.6rem;
+  margin: 0;
+  z-index: 2;
+  box-shadow: 0 1rem 1rem var(--color-light);
+}
+
+
 
 /* ==============End Sales Analytics================ */
 
@@ -519,8 +570,10 @@ main .recent-order a {
     width: 94%;
     grid-template-columns: 7rem auto 23rem;
   }
-  aside .top .logo a {
-    font-size: 2rem;
+  
+  .right .top .logo a{
+    padding-left: 1.4rem;
+    
   }
   aside .sideBarMenu h3 {
     display: none;
@@ -546,6 +599,9 @@ main .recent-order a {
   }
   main .insights > div {
     margin-bottom: 1rem;
+  }
+  .graphBox{
+    grid-template-columns: 1fr;
   }
   main .recent-order {
     width: 94%;
@@ -573,6 +629,9 @@ main .recent-order a {
     width: 100%;
     margin: 0;
   }
+
+ 
+
 }
 
 /* ===============media quries================ */
@@ -591,6 +650,7 @@ main .recent-order a {
     background: var(--white);
     width: 18rem;
     z-index: 3;
+    top: 4.5rem;
     box-shadow: 1rem 3rem 4rem var(--color-light);
     height: 100vh;
     display: none;
@@ -601,13 +661,19 @@ main .recent-order a {
       left: 0;
     }
   }
-  aside .logo {
-    margin-left: 0.5rem;
+  #menu-btn{
+    margin-top: 1rem;
+    
   }
+  .right .top .logo a{
+    padding-left: 3rem;
+    
+  }
+  
   .sideBarMenu .close {
     display: block;
   }
-  aside .top {
+  /* aside .top {
   }
   aside .top .logo a {
     margin: 0;
@@ -618,7 +684,7 @@ main .recent-order a {
   }
   aside .top .logo {
     display: none;
-  }
+  } */
 
   aside .sideBarMenu h3 {
     display: inline;
@@ -644,6 +710,9 @@ main .recent-order a {
     margin-top: 2rem;
     font-size: 2.5rem;
   }
+ .graphBox{
+   grid-template-columns: 1fr;
+ }
   main .recent-order {
     position: relative;
     margin: 3rem 0 0 0;
