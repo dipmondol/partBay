@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body onload="initClock()">
 
 
     <div class="container">
@@ -122,6 +122,21 @@
             <div class="date">
                 <input type="date">
 
+            </div>
+            <div class="dateTime">
+                <div class="dateBox">
+                    <span id="dayName">Day</span>,
+                    <span id="month">Month</span>,
+                    <span id="dayNum">00</span>,
+                    <span id="year">Year</span>
+
+                </div>
+                <div class="timeBox">
+                    <span id="hour">00</span>:
+                    <span id="minutes">00</span>:
+                    <span id="seconds">00</span>
+                    <span id="period">AM</span>
+                </div>
             </div>
             <!-- start insights -->
             <div class="insights">
@@ -354,7 +369,7 @@
                         <a href="#">Part<span>bay</span></a>
                     </div>
                 </div>
-               
+
                 <div class="rightToggler">
                     <div class="theme-toggler">
                         <span class="material-icons-sharp active">
@@ -496,6 +511,8 @@
     <script src="/js/adminPanel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <script src="/js/chart.js"></script>
+    <script src="/js/dateTime.js"></script>
+
 </body>
 
 </html>
