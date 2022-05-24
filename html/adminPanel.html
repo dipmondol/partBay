@@ -118,49 +118,140 @@
         <!-- main section -->
         <main>
             <h1 class="dashboard">Dashboard</h1>
-
-            <div class="date">
-                <input type="date">
-
-            </div>
-            <div class="dateTime">
-                <div class="dateBox">
-                    <span id="dayName">Day</span>,
-                    <span id="month">Month</span>,
-                    <span id="dayNum">00</span>,
-                    <span id="year">Year</span>
+            <div class="calDate">
+                <div class="date">
+                    <input type="date">
 
                 </div>
-                <div class="timeBox">
-                    <span id="hour">00</span>:
-                    <span id="minutes">00</span>:
-                    <span id="seconds">00</span>
-                    <span id="period">AM</span>
+                <div class="dateTime">
+                    <div class="dateBox">
+                        <span id="dayName">Day</span>,
+                        <span id="month">Month</span>,
+                        <span id="dayNum">00</span>,
+                        <span id="year">Year</span>
+
+                    </div>
+                    <div class="timeBox">
+                        <span id="hour">00</span>:
+                        <span id="minutes">00</span>:
+                        <span id="seconds">00</span>
+                        <span id="period">AM</span>
+                    </div>
                 </div>
             </div>
             <!-- start insights -->
+
+            <!-- <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <div id="js_number">
+                                
+                        </div>
+                       
+                        
+                    </div>
+        
+                </div>
+               
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="jsGradientColor">
+                            <stop offset="0%" stop-color="#DE3163" />
+                            <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                    </defs>
+                    <circle class="js_circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+        
+               
+        
+            </div> -->
+            <div class="skill">
+                <!-- PHP -->
+                <div class="outer">
+                    <div class="inner">
+                        <div id="number">
+        
+                        </div>
+        
+        
+        
+        
+                    </div>
+        
+                </div>
+        
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#43CBFF" />
+                            <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+        
+            </div>
             <div class="insights">
 
                 <!-- Star Sales -->
+                
                 <div class="sales">
+
+
                     <span class="material-icons-sharp">
                         trending_up
                     </span>
+
+                    
+                    
                     <div class="middle">
                         <div class="left">
                             <h3>Total Sales</h3>
                             <h1>$25,024</h1>
                         </div>
-
-                        <div class="progress">
-                            <svg>
-                                <circle cx='38' cy='38' r='36'></circle>
+                        <div class="skill">
+                            <!-- PHP -->
+                            <div class="outer">
+                                <div class="inner">
+                                    <div id="number">
+                    
+                                    </div>
+                    
+                    
+                    
+                    
+                                </div>
+                    
+                            </div>
+                    
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#43CBFF" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                    
+                        </div>
+                       
+                        <!-- <div class="progress">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="jsGradientColor">
+                                        <stop offset="0%" stop-color="#DE3163" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="js_circle" cx="80" cy="80" r="70" stroke-linecap="round" />
                             </svg>
                             <div class="number">
                                 <p>81%</p>
                             </div>
 
-                        </div>
+                        </div> -->
                     </div>
                     <small class="text-muted">Last 24hrs</small>
                 </div>
@@ -512,6 +603,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <script src="/js/chart.js"></script>
     <script src="/js/dateTime.js"></script>
+    <script src="/js/circularProgressBar.js"></script>
 
 </body>
 
