@@ -23,8 +23,8 @@ function updateClock(){
         return n;
     }
 
-    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "Octobor", "November", "December"];
-    var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+    var week = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
     var ids =["dayName", "month", "dayNum", "year", "hour", "minutes", "seconds", "period"];
     var values =[ week[dateName], months[month], dateNum.pad(2), year, hour.pad(2), min.pad(2), sec.pad(2), pe];
 

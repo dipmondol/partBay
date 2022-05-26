@@ -33,7 +33,6 @@
 }
 /* =============Dark Theme Variables============ */
 .dark-theme {
- 
   --white: #202528;
   --dark: #ffffff;
   --color-info-light: #181a1e;
@@ -61,9 +60,8 @@ html {
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
   user-select: none;
- 
 }
-body{
+body {
   background: var(--color-info-light);
 }
 
@@ -96,7 +94,6 @@ aside {
   justify-content: space-between;
 }
 
-
 .sideBarMenu .close {
   display: none;
 }
@@ -108,15 +105,10 @@ aside {
   grid-template-columns: 14rem auto 23rem;
 }
 
-
-.top .logo a{
-  
+.top .logo a {
   font-size: 2.5rem;
   color: var(--dark);
   font-weight: bolder;
-
-
-  
 }
 .top .logo span {
   color: var(--red);
@@ -194,9 +186,8 @@ main {
   margin-top: 5.5rem;
   margin-left: 5rem;
   color: var(--dark);
-  
 }
-main .calDate{
+main .calDate {
   display: flex;
   justify-content: space-between;
 }
@@ -207,209 +198,158 @@ main .date {
   margin-top: 1rem;
   padding: 0.5rem 1.6rem;
   height: 3.5rem;
- 
 }
 main .date input[type="date"] {
   background: transparent;
   color: var(--dark);
-  
 }
-main .dateTime{
- 
-  
+main .dateTime {
   /* background: var(--white); */
   color: var(--dark);
   width: 40rem;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
   /* border: 1px solid #2e94e3; */
   /* box-shadow: var(--box-shadow-admin); */
   /* border-radius: var(--border-radius-2); */
   /* -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1)); */
-  transition: .5s;
+  transition: 0.5s;
   transition-property: background, box-shadow;
-  
 }
 
 /* main .dateTime:hover{
   background: var(--color-primary);
   box-shadow: 0 0 3rem var(--color-primary);
 } */
-main .dateTime .dateBox{
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: .5rem;
+main .dateTime .dateBox {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5rem;
 }
-main .dateTime .timeBox{
-  font-size: 6rem;
+main .dateTime .timeBox {
+  font-size: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 400;
 }
-main .dateTime .timeBox span:not(:last-child){
+main .dateTime .timeBox span:not(:last-child) {
   position: relative;
-  margin: 0 .6rem;
+  /* margin: 0 .6rem; */
   font-weight: 600;
   text-align: center;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
 }
-main .dateTime .timeBox span:last-child{
+main .dateTime .timeBox span:last-child {
   background: var(--color-primary);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 0 .5rem;
-  margin-bottom: 3rem;
-  border-radius: .3rem;
+  padding: 0 0.5rem;
+  border-radius: 0.3rem;
   color: var(--white);
-  
-
 }
-main .insights {
-  margin-top: 1rem;
+.progress {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   color: var(--dark);
 }
-main .insights > div {
+.salesOuterBox {
+  display: flex;
   background: var(--white);
-  padding: var(--card-padding);
   border-radius: var(--border-radius-2);
   box-shadow: var(--box-shadow-admin);
+  justify-content: space-between;
+  align-items: center;
   transition: all 300mx ease;
   padding: 2rem 6rem;
 }
-main .insights > div:hover {
-  box-shadow: none;
-}
-main .insights > div span {
+.progress .salesOuterBox div > span {
   background: var(--color-primary);
   padding: 0.5rem;
   border-radius: 50%;
   color: var(--white);
   font-size: 2rem;
 }
-main .insights > div.expenses span {
-  background: var(--color-danger);
-}
-main .insights > div.income span {
-  background: var(--color-success);
-}
-
-main .insights .middle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-main .insights h3 {
+.progress .salesOuterBox h3 {
   margin: 1rem 0 0.6rem;
   font-size: 1rem;
 }
-main .insights .progress {
-  position: relative;
-  width: 92px;
-  height: 92px;
-  border-radius: 50%;
+.progress .salesOuterBox:hover {
+  box-shadow: none;
 }
-main .insights svg {
-  width: 10rem;
-  height: 10rem;
-}
-main .insights svg circle {
-  fill: none;
-  stroke: var(--color-primary);
-  stroke-width: 1rem;
-  stroke-linecap: round;
-  transform: translate(5px, 5px);
-  stroke-dashoffset: 20;
-  stroke-dasharray: 80;
-}
-main .insights .sales svg circle {
-  stroke-dashoffset: 35;
-  stroke-dasharray: 110;
-}
-main .insights .expenses svg circle {
-  stroke-dashoffset: 35;
-  stroke-dasharray: 110;
-}
-main .insights .income svg circle {
-  stroke-dashoffset: 35;
-  stroke-dasharray: 110;
-}
-main .insights .progress .number {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-}
-main .insights small {
+.progress .salesOuterBox small {
   margin-top: 1.6rem;
   display: block;
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+.salesOuterBox > div.expense span {
+  background: var(--color-danger);
+}
+
+.salesOuterBox > div.income span {
+  background: var(--color-success);
 }
 .skill {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   /* background: cornflowerblue; */
   position: relative;
   display: flex;
   margin-left: 20px;
-
-
 }
 
 .outer {
-  height: 160px;
-  width: 160px;
+  height: 140px;
+  width: 140px;
   border-radius: 50%;
   padding: 20px;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
       -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-
+  
 }
 
 .inner {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-      -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-      0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-      0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-
-}
-
-#number {
-  font-weight: 600;
-  color: #555;
-
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
 
 .skill_name {
- 
   display: block;
- 
- 
-
 }
-/* Start php circle*/
-circle {
+
+.saleCircle {
   fill: none;
   stroke: url(#GradientColor);
   stroke-width: 20px;
-  stroke-dasharray: 439;
-  stroke-dashoffset: 439;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: anim 2s linear forwards;
+}
+.expenseCircle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 350;
+  stroke-dashoffset: 350;
+  animation: anim 2s linear forwards;
+}
+.incomeCircle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 430;
+  stroke-dashoffset: 430;
   animation: anim 2s linear forwards;
 }
 
@@ -421,61 +361,50 @@ svg {
 
 @keyframes anim {
   100% {
-      stroke-dashoffset: 109;
+    stroke-dashoffset: 109;
   }
-
 }
-/* End Php Circle */
 
-/* Start Js Circle */
-
-#js_number {
+#expenseNumber {
+  font-weight: 600;
+  color: var(--lightDark);
+  font-size: 2rem;
+}
+#incomeNumber {
   font-weight: 600;
   color: #555;
-
+  font-size: 2rem;
 }
-.js_circle {
-  fill: none;
-  stroke: url(#jsGradientColor);
-  stroke-width: 20px;
-  stroke-dasharray: 472;
-  stroke-dashoffset: 472;
-  animation: jsAnim 2s linear forwards;
+
+#number {
+  font-weight: 600;
+  color: #555;
+  font-size: 2rem;
 }
 
 @keyframes jsAnim {
   100% {
-      stroke-dashoffset: 165;
+    stroke-dashoffset: 165;
   }
-
 }
 /* =================Main================ */
 
-
-
 /* ===========Graphs=========== */
-  .graphBox{
-   
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 30px;
-    min-height: 200px;
-    
-
-  }
-.graphBox .box{
+.graphBox {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+  min-height: 200px;
+}
+.graphBox .box {
   padding: 2rem;
   background: var(--white);
   width: 100%;
   box-shadow: var(--box-shadow-admin);
   border-radius: var(--border-radius-1);
-
 }
 /* ===========End of Graphs=========== */
-
-
-
 
 /* ================Recent Orders=============== */
 
@@ -536,29 +465,24 @@ main .recent-order a {
 
 /* ============Recent Updates */
 .right {
-
   margin-top: 5.5rem;
 }
-.right .top{
+.right .top {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
-  
 }
-.right .top .rightToggler{
+.right .top .rightToggler {
   display: flex;
   justify-content: end;
   gap: 2rem;
-  
 }
 
-.right .top .logo a{
+.right .top .logo a {
   padding-left: 3rem;
-  
 }
 .right .top button {
   display: none;
-  
 }
 .right .theme-toggler {
   background: var(--color-light);
@@ -570,7 +494,7 @@ main .recent-order a {
   cursor: pointer;
   border-radius: var(--border-radius-1);
   color: var(--dark);
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 .right .theme-toggler span {
   font-size: 1.7rem;
@@ -591,7 +515,8 @@ main .recent-order a {
   text-align: right;
   font-size: 1.3rem;
 }
-.right .top .profile .info p b, small{
+.right .top .profile .info p b,
+small {
   color: var(--dark);
 }
 /* Top end */
@@ -712,8 +637,6 @@ main .recent-order a {
   box-shadow: 0 1rem 1rem var(--color-light);
 }
 
-
-
 /* ==============End Sales Analytics================ */
 
 /* ===============media quries================ */
@@ -722,10 +645,9 @@ main .recent-order a {
     width: 94%;
     grid-template-columns: 7rem auto 23rem;
   }
-  
-  .right .top .logo a{
+
+  .right .top .logo a {
     padding-left: 1.4rem;
-    
   }
   aside .sideBarMenu h3 {
     display: none;
@@ -752,7 +674,7 @@ main .recent-order a {
   main .insights > div {
     margin-bottom: 1rem;
   }
-  .graphBox{
+  .graphBox {
     grid-template-columns: 1fr;
   }
   main .recent-order {
@@ -781,9 +703,6 @@ main .recent-order a {
     width: 100%;
     margin: 0;
   }
-
- 
-
 }
 
 /* ===============media quries================ */
@@ -813,15 +732,13 @@ main .recent-order a {
       left: 0;
     }
   }
-  #menu-btn{
+  #menu-btn {
     margin-top: 1rem;
-    
   }
-  .right .top .logo a{
+  .right .top .logo a {
     padding-left: 3rem;
-    
   }
-  
+
   .sideBarMenu .close {
     display: block;
   }
@@ -862,9 +779,9 @@ main .recent-order a {
     margin-top: 2rem;
     font-size: 2.5rem;
   }
- .graphBox{
-   grid-template-columns: 1fr;
- }
+  .graphBox {
+    grid-template-columns: 1fr;
+  }
   main .recent-order {
     position: relative;
     margin: 3rem 0 0 0;
