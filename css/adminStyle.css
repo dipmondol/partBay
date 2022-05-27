@@ -394,8 +394,8 @@ svg {
   width: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 30px;
-  min-height: 200px;
+  grid-gap: 3rem;
+  margin: 5rem 0;
 }
 .graphBox .box {
   padding: 2rem;
@@ -403,6 +403,7 @@ svg {
   width: 100%;
   box-shadow: var(--box-shadow-admin);
   border-radius: var(--border-radius-1);
+ 
 }
 /* ===========End of Graphs=========== */
 
@@ -640,15 +641,13 @@ small {
 /* ==============End Sales Analytics================ */
 
 /* ===============media quries================ */
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 960px) {
+
   .container {
     width: 94%;
-    grid-template-columns: 7rem auto 23rem;
+    grid-template-columns: 7rem auto 20rem;
   }
 
-  .right .top .logo a {
-    padding-left: 1.4rem;
-  }
   aside .sideBarMenu h3 {
     display: none;
   }
@@ -674,9 +673,9 @@ small {
   main .insights > div {
     margin-bottom: 1rem;
   }
-  .graphBox {
-    grid-template-columns: 1fr;
-  }
+.progress{
+  
+}
   main .recent-order {
     width: 94%;
     position: absolute;
@@ -685,6 +684,11 @@ small {
     margin: 2rem 0 0 8.8rem;
     padding-left: 5rem;
     padding-right: 8.5rem;
+  }
+  .progress{
+   
+    margin-bottom: 1rem;
+    
   }
   /* main .recent-order{
     position: relative;
@@ -709,6 +713,9 @@ small {
 
 /* =========media quries for small devices============ */
 
+@media screen and (max-width: 768px){
+
+}
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;
