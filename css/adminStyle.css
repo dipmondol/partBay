@@ -650,9 +650,30 @@ small {
 
   .container {
     width: 94%;
-    grid-template-columns: 7rem auto 20rem;
+    display: grid;
+    grid-template-columns: 7rem auto 15rem;
+    
   }
+  .calDate{
+    width: 80%;
+    margin: 0;
+  }
+ 
 
+  .progress{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+   
+  }
+  .right{
+    
+  }
+  .recent-updates{
+
+    left: 0;
+  }
+  
   aside .sideBarMenu h3 {
     display: none;
   }
@@ -678,18 +699,27 @@ small {
   main .insights > div {
     margin-bottom: 1rem;
   }
-.progress{
-  
-}
+
   main .recent-order {
-    width: 94%;
-    position: absolute;
-    left: 50%;
+    width: 100%;
+    position: relative;
+    left: 42%;
     transform: translateX(-50%);
-    margin: 2rem 0 0 8.8rem;
-    padding-left: 5rem;
-    padding-right: 8.5rem;
+    
+    
   }
+
+  .graphBox {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  /* main .recent-order {
+    position: relative;
+    margin: 3rem 0 0 0;
+    width: 100%;
+    padding: 0;
+  } */
+  
   .progress{
    
     margin-bottom: 1rem;
