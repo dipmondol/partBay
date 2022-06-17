@@ -1,0 +1,20 @@
+.productContainer{
+    margin-top: 8rem;
+}
+.productContainer .row{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+.productImage{
+    height: 60rem;
+    width: 60rem;
+
+}
+.productInfo input{
+    border: 1px solid #222;
+    width: 5rem;
+    text-align: center;
+    border-radius: .3rem;
+}
+
