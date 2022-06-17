@@ -71,12 +71,14 @@ section {
 }
 .top .trackOrder{
   display: flex;
+  
 }
 .top .trackOrder h6{
   font-size: 1.2rem;
   text-align: center;
   color: var(--lightRed);
   align-items: center;
+  font-weight: 500;
 
   
 }
@@ -505,14 +507,14 @@ body {
   flex: 1 1 80%;
   min-height: 100vh;
 }
-.portfolio{
+.add{
   display: grid;
   height: 70rem;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
 }
-.portfolio-item{
+.add-item{
   background: var(--color-danger);
   color: var(--white);
   font-weight: 700;
@@ -520,23 +522,19 @@ body {
   justify-content: center;
   align-items: center;
 }
-.medium{
-  grid-row: span 2;
+.one{
+  grid-row: span 3;
   grid-column: span 2;
 }
 
-.large{
+.two{
 grid-row: span 3;
 grid-column: span 3;
 
 }
-.tall{
+.three{
 grid-row: span 3;
-grid-column: span 2;
-}
-.wide{
-grid-row: span 2;
-grid-column: span 3;
+grid-column: span 5;
 }
 
 
@@ -566,7 +564,7 @@ grid-column: span 3;
 
 }
 .three{
-  background-image: url('/images/banners/allpartsBanner.jpg');
+  background-image: url('/images/banners/Parts-Banner-3-2.jpg');
   background-color: var(--dark);
   color: var(--white);
  
@@ -576,40 +574,7 @@ grid-column: span 3;
   position: relative;
   z-index: 10;
 }
-.four{
-  background-color: var(--dark);
-  color: var(--white);
- 
-  background-size: cover;
-  background-position: top left;
-  transition: all ease-in-out 300ms;
-  position: relative;
-  z-index: 10;
-}
-.five{
-  background-image: url('/images/banners/tires-1.png');
-  background-color: var(--dark);
-  color: var(--white);
- 
-  background-size: cover;
-  background-position: object-fit;
-  transition: all ease-in-out 300ms;
-  position: relative;
-  z-index: 10;
-}
-.six{
-  background-image: url('/images/banners/wheel.jpg');
-  background-color: var(--dark);
-  color: var(--white);
-  background-repeat: no-repeat;
-  box-shadow: var(--box-shadow);
-  background-size: auto;
-  background-position: center;
-  object-fit: cover;
-  transition: all ease-in-out 300ms;
-  position: relative;
-  z-index: 10;
-}
+
 
 .one::before{
   content: '';
@@ -641,10 +606,63 @@ grid-column: span 3;
   right: 0;
   transition: all ease-in-out 300ms;
 }
+.two h1{
+  font-size: 3.5rem;
+  color: var(--white);
+  
+  top: 5rem;
+  position: absolute;
+}
+.two span{
+  top: 9rem;
+  font-size: 3rem;
+  position: absolute;
+  color: var(--red);
+}
+
 .two:hover::before{
   opacity: 0.2;
 }
 .two:hover{
+  background-position: center;
+}
+
+
+
+.three::before{
+  content: '';
+  display: block;
+  background: var(--dark);
+  position: absolute;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: all ease-in-out 300ms;
+}
+.three h1{
+  font-size: 2rem;
+  color: var(--white);
+  top: 2rem;
+  left: 2rem;
+  position: absolute;
+  
+  
+}
+.three span{
+
+  font-size: 4rem;
+  
+  color: var(--red);
+  top: 4rem;
+  left: 2rem;
+  position: absolute;
+}
+.three:hover::before{
+  opacity: 0.2;
+}
+.three:hover{
   background-position: center;
 }
 
