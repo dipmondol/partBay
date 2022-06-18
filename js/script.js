@@ -65,7 +65,7 @@ var swiper = new Swiper(".vehicles-slider", {
       slidesPerView: 1,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     991: {
       slidesPerView: 3,
@@ -96,7 +96,7 @@ var swiper = new Swiper(".popularParts-slider", {
       slidesPerView: 1,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     991: {
       slidesPerView: 3,
