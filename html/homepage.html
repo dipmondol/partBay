@@ -43,7 +43,7 @@
                 notifications
             </span>
         </a>
-        <a href="">
+        <a href="/html/cart.html">
             <span class="material-icons-outlined">
                 shopping_cart
             </span>
@@ -95,10 +95,11 @@
 
     <!-- Login Form -->
     <div class="login-form-container">
+
         <span class="fa fa-times" id="login-form-close">
 
         </span>
-        <form action="#">
+        <form action="#" id="loginForm">
             <span class="material-icons-outlined">
                 account_circle
             </span>
@@ -109,13 +110,80 @@
             <input type="submit" value="login now" class="btn">
             <p>or login with</p>
             <div class="buttons">
-                <a href="#" class="btn">Facebook</i></a>
+                <a href="#" class="btn fb">Facebook</i></a>
 
-                <a href="#" class="btn">Google</a>
+                <a href="#" class="btn google">Google</a>
             </div>
-            <p>Don't have an account <a href="#">Create One</a> </p>
+            <p>Don't have an account <a href="#" onclick="register()">Create One</a> </p>
         </form>
+        <form action="#" id="registrationForm">
+            <h3>User Registration</h3>
+            <input type="text" placeholder="First Name" class="box">
+            <input type="text" placeholder="Last Name" class="box">
+            <input type="email" placeholder="Email" class="box">
+            <input type="password" placeholder="Password" class="box">
+            <input type="password" placeholder="Confirm Password" class="box">
+            <button type="submit" class="btn">Register</button>
+            <p>Already have an account?<a href="#" onclick="login()">Login</a> </p>
+
+        </form>
+
+
     </div>
+
+    <!-- <div class="account-page">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                        </div>
+
+                        <form action="#" id="loginForm">
+                            <span class="material-icons-outlined">
+                                account_circle
+                            </span>
+                            <h3>User Login</h3>
+                            <input type="email" placeholder="email" class="box">
+                            <input type="password" placeholder="Password" class="box">
+                            <p>Forget your password <a href="#">Click Here</a></p>
+                            <input type="submit" value="login now" class="btn">
+                            <p>or login with</p>
+                            <div class="buttons">
+                                <a href="#" class="btn">Facebook</i></a>
+
+                                <a href="#" class="btn">Google</a>
+                            </div>
+                            <p>Don't have an account <a href="#" onclick="login()">Create One</a> </p>
+                        </form>
+
+                        <form action="#" id="registrationForm">
+                            <h3>User Registration</h3>
+                            <input type="text" placeholder="First Name" class="box">
+                            <input type="text" placeholder="Last Name" class="box">
+                            <input type="email" placeholder="Email" class="box">
+                            <input type="password" placeholder="Password" class="box">
+                            <input type="password" placeholder="Confirm Password" class="box">
+                            <button type="submit" class="btn">Register</button>
+                            <p>Already have an account?<a href="#" onclick="login()">Login</a> </p>
+
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
     <!-- Login Form End -->
 
     <!-- Home Banner -->
@@ -210,7 +278,7 @@
                 </div>
                 <div class="swiper-slide box">
                     <a href="/html/productDetailsPage.html"><img src="/images/fenderLiner/fenderLiner.jpg" alt=""></a>
-                    
+
                     <div class="content">
                         <h3>New Model</h3>
                         <div class="price"><span>Price:</span>$189.99</div>
@@ -478,7 +546,7 @@
     <div class="main-content">
         <div class="add">
             <div class="add-item medium one">
-               
+
             </div>
             <div class="add-item large two">
                 <h1>Best Quality</h1>
@@ -488,11 +556,11 @@
                 <h1>We Have The Parts</h1>
                 <span>You Need</span>
             </div>
-            
+
         </div>
-    </div> 
+    </div>
     <!-- part advertisment images -->
-    
+
     <!-- Newsletter Section Start -->
     <section class="newsLetter">
         <h2>Subscribe For Latest Updates</h2>

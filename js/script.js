@@ -15,6 +15,22 @@ document.querySelector("#login-form-close").onclick = () => {
   document.querySelector(".login-form-container").classList.remove("active");
 };
 
+var loginForm = document.getElementById("loginForm");
+var regForm = document.getElementById("registrationForm");
+
+function register(){
+  regForm.style.transform = "translateX(0px)";
+  loginForm.style.transform = "translateX(0px)";
+}
+function login(){
+  regForm.style.transform = "translateX(300px)";
+  loginForm.style.transform = "translateX(300px)";
+  
+}
+
+
+
+
 window.onscroll = () => {
   if (window.scrollY > 0) {
     document.querySelector(".header").classList.add("active");
@@ -103,3 +119,4 @@ var swiper = new Swiper(".popularParts-slider", {
     },
   },
 });
+

@@ -1,0 +1,101 @@
+
+:root {
+    --dark: #292929;
+    --lightDark: #616161;
+    --white: #ffffff;
+    --orange: #fe8529;
+    --yellow: #eeb34b;
+    --red: #e3394b;
+    --lightRed: #fe4c6f;
+    --darkBlue: #1d3557;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+
+  * {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+  }
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+  }
+body{
+    height: 100%;
+}
+.cartTable-container{
+    height: 50%;
+    padding: 10rem 9%;
+
+}
+
+.cart-info{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+.cart-info img{
+    height: 5rem;
+    width: 5rem;
+}
+table{
+    width: 100%;
+    text-align: left;
+    
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    font-weight: normal;
+    background: var(--red);
+}
+table td{
+    padding: 1rem .5rem;
+}
+table td input{
+    width: 4rem;
+    height: 2.5rem;
+    border: 1px solid #616161 ;
+    border-radius: 3px;
+    padding: .5rem;
+    text-align: center;
+
+}
+
+.totalPrice{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.totalPrice table{
+    border-top: 3px solid var(--red);
+    width: 100%;
+    max-width: 40rem;
+}
+
+td:last-child{
+    text-align: right;
+
+}
+th:last-child{
+    text-align: right;
+}
+
+
+.footer{
+    position: relative;
+}

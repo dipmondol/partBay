@@ -219,10 +219,12 @@ body {
   align-items: center;
   justify-content: center;
   opacity: 0;
+ 
 }
 .login-form-container form span {
   font-size: 8rem;
   color: var(--lightRed);
+  
    
   
 }
@@ -237,9 +239,13 @@ body {
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
   background: #fff;
-  border: var(--border);
+ 
   text-align: center;
   width: 40rem;
+  transition: transform 1s;
+  position: absolute;
+  border: 5px solird red;
+  
 }
 .login-form-container form .buttons {
   display: flex;
@@ -283,6 +289,14 @@ body {
   color: var(--dark);
   cursor: pointer;
 }
+.buttons .fb{
+  background-color: #3B5998;;
+}
+.buttons .google{
+  background-color: #dd4b39;
+}
+
+
 /* Login Form End */
 /* Home Banners */
 .home {

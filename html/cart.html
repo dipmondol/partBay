@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- Fontawesome -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/homepageStyle.css">
+    <link rel="stylesheet" href="/css/cart.css">
+
+
+</head>
+
+<body>
+
+    <!-- Top End -->
+
+    <div class="top">
+        <a href="" class="trackOrder">
+            <h6>Track Order</h6>
+            <span class="material-icons-outlined ">
+                room
+
+            </span>
+        </a>
+        <a href="" class="favorite">
+            <span class="material-icons-outlined">
+                favorite_border
+            </span>
+        </a>
+        <a href="">
+            <span class="material-icons-outlined">
+                notifications
+            </span>
+        </a>
+        <a href="/html/cart.html">
+            <span class="material-icons-outlined">
+                shopping_cart
+            </span>
+
+        </a>
+    </div>
+
+
+    <!-- Top End -->
+
+    <!-- Header Section Start -->
+
+
+    <header class="header">
+
+        <div id="menu-btn" class="fa fa-bars"></div>
+        <a href="/html/homepage.html" class="logo"><span>part</span>bay</a>
+
+        <!-- <div class="search-container">
+            <form action="#">
+                <input type="text" placeholder="Search here...." name="search">
+                <button type="submit"> <i class="fa fa-search"></i> </button>
+            </form>
+        </div> -->
+        <form action="">
+            <input type="search" placeholder="Search here..." name="" id="">
+            <input type="submit" class="search" name="" id="">
+        </form>
+        <!-- menu -->
+        <nav class="navbar">
+            <a href="/html/homepage.html">Home</a>
+            <a href="#interior">Interior</a>
+            <a href="#exterior">Exterior</a>
+            <a href="#lighting">Lighting</a>
+            <a href="#aboutus">About Us</a>
+
+        </nav>
+        <div class="login-btn">
+            <button class="btn">Login</button>
+
+            <span class="material-icons-outlined">
+                account_circle
+            </span>
+
+        </div>
+        <!-- menu -->
+    </header>
+    <!-- Header Section end -->
+
+    <!-- Login Form -->
+    <div class="login-form-container">
+
+        <span class="fa fa-times" id="login-form-close">
+
+        </span>
+        <form action="#" id="loginForm">
+            <span class="material-icons-outlined">
+                account_circle
+            </span>
+            <h3>User Login</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="Password" class="box">
+            <p>Forget your password <a href="#">Click Here</a></p>
+            <input type="submit" value="login now" class="btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn fb">Facebook</i></a>
+
+                <a href="#" class="btn google">Google</a>
+            </div>
+            <p>Don't have an account <a href="#" onclick="register()">Create One</a> </p>
+        </form>
+        <form action="#" id="registrationForm">
+            <h3>User Registration</h3>
+            <input type="text" placeholder="First Name" class="box">
+            <input type="text" placeholder="Last Name" class="box">
+            <input type="email" placeholder="Email" class="box">
+            <input type="password" placeholder="Password" class="box">
+            <input type="password" placeholder="Confirm Password" class="box">
+            <button type="submit" class="btn">Register</button>
+            <p>Already have an account?<a href="#" onclick="login()">Login</a> </p>
+
+        </form>
+
+
+    </div>
+
+    <!-- cart -->
+
+    <div class="cartTable-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="/images/fenderLiner/fenderLiner.jpg" alt="">
+                        <div>
+                            <p>New Set Of 2 Fender Liners For Honda Accord 2013-2014 Left & Right Side</p>
+                            <small>Price: $84</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                
+                <td><input type="number" value="1"></td>
+                <td>$30</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="/images/fenderLiner/fenderLiner.jpg" alt="">
+                        <div>
+                            <p>New Set Of 2 Fender Liners For Honda Accord 2013-2014 Left & Right Side</p>
+                            <small>Price: $84</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                
+                <td><input type="number" value="1"></td>
+                <td>$30</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="/images/fenderLiner/fenderLiner.jpg" alt="">
+                        <div>
+                            <p>New Set Of 2 Fender Liners For Honda Accord 2013-2014 Left & Right Side</p>
+                            <small>Price: $84</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                
+                <td><input type="number" value="1"></td>
+                <td>$30</td>
+            </tr>
+        </table>
+
+        <div class="totalPrice">
+            <table>
+                <tr>
+                    <td>Total</td>
+                    <td>$252</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>$252</td>
+                </tr>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$252</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- cart -->
+
+
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Customer Service</h3>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Live Support
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Return Policy
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>About Us
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>After Sale Support
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>FAQ
+                </a>
+
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Home
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Interior
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Exterior
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>Lighting
+                </a>
+                <a href="#">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>About Us
+                </a>
+            </div>
+            <div class="box">
+                <h3>Contact US</h3>
+                <a href="#">
+                    <ion-icon name="location-outline"></ion-icon>House: 1217, Block: C, Road: 2, Vatara, Dhaka-1212.
+                </a>
+                <a href="#">
+                    <ion-icon name="call-outline"></ion-icon>01593867835
+                </a>
+                <a href="#">
+                    <ion-icon name="mail-outline"></ion-icon>partbay@gmail.com
+                </a>
+
+                <div class="social">
+                    <a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+
+                </div>
+            </div>
+            <div class="box">
+                <h3>Payment</h3>
+
+                <i class="fab fa-paypal fa-2x"></i>
+                <i class="fab fa-google-pay fa-2x"></i>
+                <i class="fab fa-cc-visa fa-2x" aria-hidden="true"></i>
+                <i class="fab fa-cc-mastercard fa-2x" aria-hidden="true"></i>
+                <i class="fab fa-cc-amex fa-2x"></i>
+
+            </div>
+
+        </div>
+
+        <!-- copyrights -->
+        <div class="copyright">
+
+            <p> Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> | All Rights Reserved Partbay
+            </p>
+        </div>
+        <!-- copyrights -->
+
+    </section>
+    <!-- footer section end -->
+
+
+    <!-- custom js link -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+
+
+</body>
+
+</html>
