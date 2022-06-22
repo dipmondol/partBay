@@ -86,6 +86,7 @@ section {
   height: 3rem;
   width: 3rem;
   color: var(--lightDark);
+  font-weight: lighter;
 }
 .top span:hover{
   color: var(--lightRed);
@@ -172,25 +173,30 @@ section {
 }
 .btn {
   display: inline-block;
- 
   border-radius: 0.5rem;
   background: var(--red);
   color: var(--white);
   font-weight: 500;
   font-size: 1.7rem;
   cursor: pointer;
-  padding: 0.8rem 3rem;
+  padding: 0.8rem 2rem;
+  
+  
 
+}
+.box .addtoCartBtn{
+  margin-left: 1rem;
 }
 .btn:hover {
   background: #fe4c6f;
 }
 
 .header .login-btn span {
-  font-size: 2.5rem;
-  color: var(--dark);
+  font-weight: lighter;
+  color: var(--darkBlue);
   cursor: pointer;
   display: none;
+  
 }
 #menu-btn {
   font-size: 2.5rem;
@@ -481,27 +487,40 @@ body {
 }
 .popularParts .popularParts-slider .box {
   text-align: center;
-  padding: 2rem;
+  padding: 2.5rem;
   box-shadow: var(--box-shadow);
   border: var(--border);
   border-radius: 0.5rem;
+ 
 }
 .popularParts .popularParts-slider .box img {
-  height: 40%;
-  width: 40%;
-  padding: 2rem;
+  height: 45%;
+  width: 45%;
+  
 }
+.box .buyNowBtn{
+  display: none;
+  cursor: pointer;
+}
+ .box .addtoCartBtn{
+  
+  cursor: pointer;
+  margin-top: 3rem;
+  margin-left: 0;
+}
+
 
 .popularParts .popularParts-slider .box:hover img {
   transform: scale(0.9);
 }
+
 .popularParts .popularParts-slider .box h3 {
   font-size: 2rem;
   font-weight: 500;
   color: var(--dark);
 }
 .popularParts .popularParts-slider .box .stars {
-  padding: 1rem 0;
+  
 }
 .popularParts .popularParts-slider .box .stars i {
   font-size: 1.7rem;
