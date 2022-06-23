@@ -534,6 +534,145 @@ body {
 /* Popular Parts End */
 
 
+/* ===============Three Col Products ================ */
+
+.threeColProducts{
+  display: flex;
+  padding: 0 9% 0 9%;
+  gap: 1rem;
+}
+.newArrivals .newArrivalsTittle{
+  padding: 0;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+
+.threeColProducts .newArrivals .newArrivalsRow{ 
+  display: flex;
+  gap: 1rem;
+
+  margin-top: 1rem;
+  width: 100%;
+}
+ .threeColProducts img{
+  height: 14.5rem;
+  width: 13rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+ }
+
+.newArrivalsContent h3{
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+.newArrivalsContent .stars{
+  color: var(--yellow);
+ 
+  font-size: 1.3rem;
+}
+ .newArrivalsContent .price{
+  display: flex;
+  gap: .5rem;
+ }
+ .newArrivalsContent .price h4{
+  text-decoration: line-through;
+  color: #616161;
+  font-size: 1.2rem;
+  
+ }
+ .newArrivalsContent .btn{
+  
+ }
+
+ /* best seller */
+
+ .bestSeller .bestSellerTittle{
+  padding: 0;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+
+.threeColProducts .bestSeller .bestSellerRow{ 
+  display: flex;
+  gap: 1rem;
+
+  margin-top: 1rem;
+  width: 100%;
+}
+
+
+.bestSeller h3{
+  font-weight: 500;
+  font-size: 1.5rem;
+  
+}
+.bestSellerContent .stars{
+  color: var(--yellow);
+ 
+  font-size: 1.3rem;
+}
+ .bestSellerContent .price{
+  display: flex;
+  gap: .5rem;
+ }
+ .bestSellerContent .price h4{
+  text-decoration: line-through;
+  color: #616161;
+  font-size: 1.2rem;
+  
+ }
+ .bestSellerContent .btn{
+  margin-top: 1rem;
+ }
+
+
+ /* Featured products */
+ .featured .featuredTittle{
+  padding: 0;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+
+.threeColProducts .featured .featuredRow{ 
+  display: flex;
+  gap: 1rem;
+
+  margin-top: 1rem;
+  width: 100%;
+}
+
+
+.featured h3{
+  font-weight: 500;
+  font-size: 1.5rem;
+  
+}
+.featuredContent .stars{
+  color: var(--yellow);
+ 
+  font-size: 1.3rem;
+}
+ .featuredContent .price{
+  display: flex;
+  gap: .5rem;
+ }
+ .featuredContent .price h4{
+  text-decoration: line-through;
+  color: #616161;
+  font-size: 1.2rem;
+  
+ }
+ 
+/* ===============Three Col Products ================ */
+
+
 /* =========Offer Addvertisment================ */
 .main-content{
   padding: 10%;
