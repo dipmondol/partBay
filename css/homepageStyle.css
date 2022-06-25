@@ -717,7 +717,7 @@ body {
 
 /* =========Offer Addvertisment================ */
 .main-content{
-  padding: 10%;
+  padding: 2% 10%;
   flex: 1 1 80%;
   min-height: 100vh;
 }
@@ -882,6 +882,19 @@ grid-column: span 5;
 
 
 /* =========Offer Addvertisment================ */
+/*====================brand================== */
+
+.brandLogo{
+  display: flex;
+  padding: 2% 9%;
+  justify-content: space-around;
+}
+.brandLogo img{
+  height: 15rem;
+  width: 25rem;
+  object-fit: cover;
+}
+/*====================End brand================== */
 
 /* newsletter start */
 .newsLetter {
