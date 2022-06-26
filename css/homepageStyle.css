@@ -225,6 +225,7 @@ body {
   align-items: center;
   justify-content: center;
   opacity: 0;
+  border: 5px solid red;
  
 }
 .login-form-container form span {
@@ -300,6 +301,10 @@ body {
 }
 .buttons .google{
   background-color: #dd4b39;
+}
+
+#registrationForm{
+  
 }
 
 
@@ -519,9 +524,7 @@ body {
   font-weight: 500;
   color: var(--dark);
 }
-.popularParts .popularParts-slider .box .stars {
-  
-}
+
 .popularParts .popularParts-slider .box .stars i {
   font-size: 1.7rem;
   color: var(--yellow);
@@ -538,7 +541,7 @@ body {
 
 .threeColProducts{
   display: flex;
-  padding: 0 9% 0 9%;
+  padding: 0 10% 0 10%;
   gap: 1rem;
 }
 .newArrivals .newArrivalsTittle{
@@ -719,7 +722,7 @@ body {
 .main-content{
   padding: 2% 10%;
   flex: 1 1 80%;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 .add{
   display: grid;
@@ -749,6 +752,7 @@ grid-column: span 3;
 .three{
 grid-row: span 3;
 grid-column: span 5;
+
 }
 
 
@@ -887,7 +891,9 @@ grid-column: span 5;
 .brandLogo{
   display: flex;
   padding: 2% 9%;
-  justify-content: space-around;
+  gap: 2rem;
+  justify-content: space-evenly;
+
 }
 .brandLogo img{
   height: 15rem;
@@ -1088,10 +1094,7 @@ grid-column: span 5;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-  .threeColProducts{
-    display: flex;
-    flex-direction: column;
-  }
+  
 
 }
 
@@ -1159,8 +1162,129 @@ grid-column: span 5;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  
 
+
+  .threeColProducts{
+    display: flex;
+    flex-direction: column;
+  }
+  .threeColProducts .newArrivals{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+
+
+  }
+  .threeColProducts .newArrivals .newArrivalsRow{
+    display: grid;
+   
+    
+    
+  }
+  .newArrivals h1{
+    grid-column: span 3 ;
+  }
+  .newArrivals a{
+    grid-column: span 3;
+  }
+  .newArrivalsImage img{
+    width: 100%;
+    object-fit: contain;
+  }
+  .newArrivalsContent h3{
+    
+    overflow: hidden;
+
+  }
+  .newArrivalsContent .btn{
+    width: 100%;
+    text-align: center;
+  }
+  
+ 
+  .threeColProducts .bestSeller{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+
+
+  }
+  .threeColProducts .bestSeller .bestSellerRow{
+    display: grid;
+   
+    
+    
+  }
+  .bestSeller h1{
+    grid-column: span 3 ;
+  }
+  .bestSeller a{
+    grid-column: span 3;
+  }
+  .bestSellerImage img{
+    width: 100%;
+    object-fit: contain;
+  }
+  .bestSellerContent h3{
+    
+    overflow: hidden;
+
+  }
+  .bestSellerContent .btn{
+    width: 100%;
+    text-align: center;
+  }
+
+  
+  .threeColProducts .featured{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+
+
+  }
+  .threeColProducts .featured .featuredRow{
+    display: grid;
+   
+    
+    
+  }
+  .featured h1{
+    grid-column: span 3 ;
+  }
+  .featured a{
+    grid-column: span 3;
+  }
+  .featuredImage img{
+    width: 100%;
+    object-fit: contain;
+  }
+  .featuredContent h3{
+    
+    overflow: hidden;
+
+  }
+  .featuredContent .btn{
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .brandLogo{
+    display: flex;
+    justify-content: space-evenly;
+    
+  
+    
+  }
+  .brandLogo img{
+    width: 15rem;
+    height: 10rem;
+    
+  }
 
 }
 @media (max-width: 810px) {
@@ -1203,6 +1327,8 @@ grid-column: span 5;
     font-size: 2rem;
     border-bottom: var(--border);
   }
+
+  
  
 }
 @media (max-width: 640px) {
@@ -1210,6 +1336,18 @@ grid-column: span 5;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .brandLogo{
+    display: flex;
+  
+ 
+  }
+
+  .brandLogo img{
+    height: 8rem;
+    min-width: 8rem;
+  }
+
   
 }
 @media (max-width: 510px) {
@@ -1224,5 +1362,57 @@ grid-column: span 5;
     justify-content: space-between;
     
   }
+  .threeColProducts{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .threeColProducts .newArrivals
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .threeColProducts .newArrivals .newArrivalsRow{
+    display: flex;
+  }
+  .newArrivalsImage img{
+    width: 13rem;
+  }
+  .newArrivalsContent .btn{
+    width: auto;
+  }
+
+  .threeColProducts .bestSeller
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .threeColProducts .bestSeller .bestSellerRow{
+    display: flex;
+  }
+  .bestSellerImage img{
+    width: 13rem;
+  }
+  .bestSellerContent .btn{
+    width: auto;
+  }
+
+  .threeColProducts .featured
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .threeColProducts .featured .featuredRow{
+    display: flex;
+  }
+  .featuredRow img{
+    width: 13rem;
+  }
+  .featuredContent .btn{
+    width: auto;
+  }
+
+
+  
   
 }
