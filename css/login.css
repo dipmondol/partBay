@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@500&family=Playfair+Display:ital,wght@0,800;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap");
+
+:root {
+  --dark: #292929;
+  --lightDark: #616161;
+  --white: #ffffff;
+  --orange: #fe8529;
+  --yellow: #eeb34b;
+  --red: #e3394b;
+  --lightRed: #fe4c6f;
+  --darkBlue: #1d3557;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.account-page {
+  margin-top: 100px;
+}
+.account-page .container .row {
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.form-container {
+  background: #fff;
+  width: 35rem;
+  height: 45rem;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-container .form-btn span {
+  font-weight: bold;
+  padding: 0 1rem;
+  color: #555;
+  cursor: pointer;
+  width: 10rem;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.form-container .form-btn {
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+.form-container form {
+  max-width: 35rem;
+  padding: 0 3rem;
+  position: absolute;
+  top: 10rem;
+  transition: transform 1s;
+}
+
+.form-container form input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+.form-container form input:focus{
+    border: 1px solid var(--lightRed);
+} 
+
+.forgetPass{
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+
+#loginForm {
+  left: -330px;
+}
+
+#registrationForm {
+  left: 0;
+}
+#togglePassword{
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: -3rem;
+    cursor: pointer;
+}
+#indicator {
+  width: 100px;
+  border: none;
+  background: #ff523b;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(100px);
+  transition: transform 1s;
+}
+label input[type="checkbox"]{
+   
+    height: 1.2rem;
+    width: 1.2rem;
+    
+    
+   
+    
+    
+}
+label{
+    display: block;
+    text-align: left;
+    font-size: 1.2rem;
+
+
+}
+
+
+.btn{
+    display: inline-block;
+    width: 100%;   
+    
+  
+  }
+
+
+  .loginWith{
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ccc;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .socialButtons{
+     height: 5rem;
+     width: 5rem;
+  }
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 28rem;
+  /* padding: 1rem 1rem 0 1rem; */
+}
