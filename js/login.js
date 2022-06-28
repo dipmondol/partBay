@@ -5,7 +5,7 @@ var Indicator = document.getElementById("indicator");
 function register(){
   regForm.style.transform = "translateX(0px)";
   loginForm.style.transform = "translateX(0px)";
-  Indicator.style.transform = "translateX(100px)";
+  Indicator.style.transform = "translateX(95px)";
 }
 function login(){
   regForm.style.transform = "translateX(330px)";

@@ -22,7 +22,7 @@
 
 </head>
 
-<body scroll="no    ">
+<body>
 
     <!-- Top End -->
 
@@ -83,11 +83,13 @@
 
         </nav>
         <div class="login-btn">
-            <button class="btn">Login</button>
-
-            <span class="material-icons-outlined">
-                account_circle
-            </span>
+            <a href="/html/login.html"><button class="btn">Login</button></a>
+            <a href="/html/login.html">
+                <span class="material-icons-outlined">
+                    account_circle
+                </span>
+            </a>
+           
 
         </div>
         <!-- menu -->
@@ -143,7 +145,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <img src="/images/banners/parts.jpg" alt="" width="100%">
+                    <img src="/images/banners/parts.jpg" alt="" width="100%" class="loginBg">
 
                 </div>
                 <div class="col-2">
@@ -165,35 +167,41 @@
                             <input type="password" placeholder="Password" class="box" name="password" autocomplete="current-password" required="" id="password">
                             <i class="far fa-eye" id="togglePassword"></i>
                            
-                            <p class="forgetPass"><a href="#">Forget password?</a></p>
+                            
+                            <label>
+                                <input type="checkbox" name="remember"> Remember me
+                              </label>
                             
                             <button type="submit" class="btn loginBtn">Login</button>
-                            <label>
-                                <input type="checkbox" checked="checked" name="remember"> Remember me
-                              </label>
+                            <p class="forgetPass"><a href="#">Forget password?</a></p>
+                           
                             <p class="loginWith">or login with</p>
                             <div class="socialButtons">
-                                <ion-icon name="logo-facebook"></ion-icon>
+                               
+                                <a href="https://www.facebook.com/"> <ion-icon name="logo-facebook" class="fb"></ion-icon></a>
 
-                                <ion-icon name="logo-google"></ion-icon>
-
-                                <ion-icon name="logo-twitter"></ion-icon>
+                                <a href="https://accounts.google.com/signin/v2/identifier?hl=en&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgoogle%2Blogin%2Bpage%26oq%3Dgoogl%26aqs%3Dchrome.0.69i59l3j69i57j69i60l3j69i65.4536j0j7%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAlAAQ&flowName=GlifWebSignIn&flowEntry=AddSession"><img src="/images/brandLogo/google.png" alt="" class="google"></a>
+                               
+                                <a href="https://twitter.com/"><ion-icon name="logo-twitter" class="twitter"></ion-icon></a>
+                                
 
                             </div>
-                            <p>Don't have an account <a href="#" onclick="register()">Create One</a> </p>
+                            <p class="dontAcc">Don't have an account? <a href="#" onclick="register()">Create One</a> </p>
                         </form>
 
                         <form action="#" id="registrationForm">
-                            <h3>User Registration</h3>
+                           
                             <input type="text" placeholder="First Name" class="box">
                             <input type="text" placeholder="Last Name" class="box">
                             <input type="email" placeholder="Email" class="box">
                             <input type="password" placeholder="Password" class="box">
                             <input type="password" placeholder="Confirm Password" class="box">
                             <button type="submit" class="btn">Register</button>
-                            <p>Already have an account?<a href="#" onclick="login()">Login</a> </p>
+                            <p>Already have an account?<a href="#" onclick="login()"> Login</a> </p>
 
                         </form>
+
+
 
 
 
@@ -218,7 +226,7 @@
 
 
     <!-- footer section starts -->
-    <!-- <section class="footer">
+     <section class="footer">
         <div class="box-container">
             <div class="box">
                 <h3>Customer Service</h3>
@@ -307,13 +315,14 @@
         </div>
         <!-- copyrights -->
 
-    </section> -->
+    </section> 
     <!-- footer section end -->
 
 
     <!-- custom js link -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="/js/login.js"></script>
+    <script src="/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
 
